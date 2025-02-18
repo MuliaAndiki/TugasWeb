@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Gochi+Hand&family=Jersey+10&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Arial", sans-serif;
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body{
+background:var(--bg-color);
+
+}
+:root{
+  /* Warna */
+  --bg-color: #000000;
+  
+  /* Font */
+  --main-jersey-kategori-font:'jersey 10', serif;
+  --main-gochi-font:'Gochi Hand',serif;
+  --main-acme-font:"Acme", serif;
+
+}
+.header{
+  position: fixed;
+  top: 2%;
+  left: 0;
+  width: 70%;
+  padding: 2rem 1%;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 100;
+  box-shadow: var(--bg-color);
+  border-radius: 10px;
+}
+.navbar{
+  display: flex;
+  font-size: 1.6rem;
+  gap: 4rem;
+}
+
+.navbar a{
+  font-family: "Jersey 10", serif;
+
+  font-size: 3rem;
+}
+.navbar .navtext{
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.header #icon{
+  font-size: 3rem;
+  font-family: var(--main-jersey-kategori-font);
+  justify-items: center;
+  align-items: center;
+}
+
+.navtext a{
+  font-family: var(--main-jersey-kategori-font);
+  font-size: 3rem;
+}
+.sosmed{
+  display: flex;
+  gap: 20px;
+}
+.sosialmedia{
+  position: relative;
+  align-items: center;
+  
+}
+
+.sosialmedia img{
+  display: flex;
+  justify-content: center;
+  width: 7vh;
+  height: 7vh;
+  gap: 4rem;
+}
+
+.header #message{
+  justify-items: end;
+}
+
+.logo{
+  font-size: 2rem;
+}
+.navbar .sosialmedia{
+  display: flex;
+  gap: 3rem;
+  
+}
