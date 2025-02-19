@@ -20,6 +20,8 @@ background:var(--bg-color);
 :root{
   /* Warna */
   --bg-color: #000000;
+  --color-font :#000000;
+  --hover-color :#2fd0e8;
   
   /* Font */
   --main-jersey-kategori-font:'jersey 10', serif;
@@ -28,10 +30,10 @@ background:var(--bg-color);
 
 }
 .header{
-  position: fixed;
+  position: absolute;
   top: 2%;
-  left: 0;
-  width: 70%;
+  left: 39%;
+  width: 50%;
   padding: 2rem 1%;
   display: flex;
   background-color: rgb(255, 255, 255);
@@ -40,6 +42,7 @@ background:var(--bg-color);
   z-index: 100;
   box-shadow: var(--bg-color);
   border-radius: 10px;
+  box-shadow: 1px, 2px, 3px rgba(0,0, 0, 0.6);
 }
 .navbar{
   display: flex;
@@ -49,7 +52,6 @@ background:var(--bg-color);
 
 .navbar a{
   font-family: "Jersey 10", serif;
-
   font-size: 3rem;
 }
 .navbar .navtext{
@@ -63,11 +65,22 @@ background:var(--bg-color);
   font-family: var(--main-jersey-kategori-font);
   justify-items: center;
   align-items: center;
+  color: var(--bg-color);
+  transition: 0.3 ease-in-out;
+}
+.header #icon:hover{
+  color: var(--hover-color);
+  scale: 0.3vh;
 }
 
 .navtext a{
   font-family: var(--main-jersey-kategori-font);
   font-size: 3rem;
+  color: var(--color-font);
+}
+.navbar a:hover{
+  color: var(--hover-color);
+  transform: scale(0.3px);
 }
 .sosmed{
   display: flex;
@@ -76,7 +89,6 @@ background:var(--bg-color);
 .sosialmedia{
   position: relative;
   align-items: center;
-  
 }
 
 .sosialmedia img{
@@ -84,11 +96,15 @@ background:var(--bg-color);
   justify-content: center;
   width: 7vh;
   height: 7vh;
-  gap: 4rem;
+  gap: 5rem;
 }
 
-.header #message{
-  justify-items: end;
+@keyframes icon-animation {
+  0% { transform: translateX(0);}
+  25% { transform: translateX(-2px);}
+  50% { transform: translateX(2px);}
+  75% { transform: translateX(-2px);}
+  100% { transform: translateX(0);}
 }
 
 .logo{
@@ -97,5 +113,31 @@ background:var(--bg-color);
 .navbar .sosialmedia{
   display: flex;
   gap: 3rem;
-  
+}
+ .main-hero #partikel{
+  position: absolute;
+  top: 30%;
+  left: 68%;
+}
+
+.main-hero #partikel1{
+  position: absolute;
+  top:-1%;
+  transform: rotate(180deg);
+  right: 45%;
+}
+.main-hero #gelombang1{
+  position: absolute;
+  top: 80%;
+  box-shadow: rgba(0,0, 0, 0.6);
+}
+
+.main-hero #gelombang2{
+  position: absolute;
+  top: 85%;
+}
+
+.main-hero #gelombang3{
+  position: absolute;
+  top: 90%;
 }
