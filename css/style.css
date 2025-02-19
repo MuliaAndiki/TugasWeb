@@ -189,20 +189,14 @@ body {
   padding: 2rem 0;
 }
 
-.main h1{
+.main .text-slide{
 position: relative;
 font-family: var(--main-kaushan-font);
 color: var(--bg-color);
-bottom: 51vh;
+bottom: 43vh;
 font-size: 7vh;
-right: 155vh;
+right: 150vh;
 z-index: 96;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px; 
 }
 
 .grid-slide {
@@ -232,23 +226,49 @@ z-index: 96;
   width: 30rem;
   background: linear-gradient(to bottom, rgb(178, 202, 215), rgb(64, 64, 64));
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  text-align: center;
+  justify-content: space-between;
   border-radius: 6px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   z-index: 99;
 }
-.grid-item .about p{
-  text-align: center;
+.title{
+  min-width: 5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 100%;
   font-family: var(--main-jersey-kategori-font);
-  font-size: 3vh;
+  font-size: 9vh;
+  flex-grow: 1;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.about-deskripsi{
+  min-width: 5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 100%;
+  position: relative;
+  top: 25vh;
+  font-family: var(--main-jersey-kategori-font);
+  font-size: 4vh;
+  flex-grow: 1;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid-in-container{
   display: grid;
-  position: relative;
-  bottom: 13rem;
+  position: absolute;
+  top: 4rem;
+  left: 6rem;
   place-items: center;
   background-color: var(--color-font);
   width: 60%;
@@ -263,13 +283,79 @@ z-index: 96;
 }
 
 .bulat-foto{
+  position: relative;
+  bottom: 26rem;
+  left: 6rem;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   transform: scale(2.6);
   object-fit: cover;
+}
+.grid-item2{
+  top: 4rem;
+  left: 30rem;
+  position: relative;
+  height: 70rem;
+  width: 90rem;
+  background: linear-gradient(to bottom, rgb(178, 202, 215), rgb(64, 64, 64));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+
+.grid-in{
+  top: 1rem;
+  left: 1.2rem;
+  position: relative;
+  height: 70rem;
+  width: 90rem;
+  background: linear-gradient(to bottom, rgb(178, 202, 215), rgb(64, 64, 64));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+#porsonality{
+  position: relative;
+  bottom: 28rem;
+  left: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-in .grid-foto2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-foto2 .petak-foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-foto2 img{
+  position: relative;
+  right: 100vh;
+  bottom: 20vh;
   
 }
+.petak-foto {
+  width: 170px;  
+  height: 170px;
+  object-fit: cover; 
+  border-radius: 0; 
+  border-radius: 10px; 
+}
+
+
 
 @media (max-width: 768px) {
   .header {
