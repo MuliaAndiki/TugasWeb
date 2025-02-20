@@ -350,7 +350,6 @@ z-index: 96;
   position: absolute;
   right: 100vh;
   bottom: 60vh;
-  
 }
 .petak-foto {
   width: 170px;  
@@ -412,6 +411,64 @@ z-index: 96;
   top: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);;
 }
+.skills-card img:hover{
+  animation: shake 0.3s ease-in-out;
+}
+
+#message-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+#form-title {
+  text-align: center;
+  font-family: var(--main-jersey-kategori-font);
+  margin-bottom: 20px;
+  font-size: 5rem;
+}
+
+#label-to, #label-subject, #label-message {
+  font-weight: bold;
+  font-family: var(--main-jersey-kategori-font);
+  font-size :2rem;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+#to, #subject, #message {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#message11{
+  height: 100px;
+  resize: none;
+}
+
+#send-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  background: linear-gradient(to bottom, rgb(178, 202, 215), rgb(64, 64, 64));
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#send-button:hover {
+  background-color: #ff0000;
+}
+
 
 @media (max-width: 768px) {
   .header {
