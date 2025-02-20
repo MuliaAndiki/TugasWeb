@@ -21,7 +21,11 @@ Berikut adalah beberapa keterampilan yang saya miliki:
 
 ## 📸 Galeri
 
-Di bawah ini adalah beberapa gambar dan proyek yang pernah saya kerjakan:
+- Page 1 
+<img src="/Asset/Web.png>
+
+- Page 2 
+<img src="/Asset/page 2.png">
 
 ### Web Development
 ![Web Development](path-to-your-image.jpg)
