@@ -5,8 +5,8 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  /* border:1px solid red, !important; */
-  border:none;
+  border:1px solid red, !important;
+  /* border:none; */
   outline: none;
   scroll-behavior: smooth;
   font-family: "Arial", sans-serif;
@@ -255,6 +255,7 @@ z-index: 96;
   max-height: 100%;
   position: relative;
   top: 25vh;
+  text-align: justify;
   font-family: var(--main-jersey-kategori-font);
   font-size: 4vh;
   flex-grow: 1;
@@ -319,12 +320,15 @@ z-index: 96;
   justify-content: center;
   border-radius: 6px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  padding : 2rem;
   z-index: 99;
 }
 #porsonality{
   position: relative;
   bottom: 28rem;
-  left: 9rem;
+  left: 5rem;
+  max-width:60vh ;
+  width: 300rem;  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -334,6 +338,7 @@ z-index: 96;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 10vh;
 }
 
 .grid-foto2 .petak-foto{
@@ -342,9 +347,9 @@ z-index: 96;
     justify-content: center;
 }
 .grid-foto2 img{
-  position: relative;
+  position: absolute;
   right: 100vh;
-  bottom: 20vh;
+  bottom: 60vh;
   
 }
 .petak-foto {
@@ -353,9 +358,60 @@ z-index: 96;
   object-fit: cover; 
   border-radius: 0; 
   border-radius: 10px; 
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.porsonality-deskripsi{
+  min-width: 5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 100%;
+  position: absolute;
+  width: 60rem;
+  bottom: 59vh;
+  left: 30vh;
+  font-family: var(--main-jersey-kategori-font);
+  font-size: 4vh;
+  flex-grow: 1;
+  text-align: justify;
+  word-wrap: break-word;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+ .foto-3 #title1{
+  position: absolute;
+  display: inline-flex;
+  font-family: var(--main-jersey-kategori-font);
+  width: 15rem;
+  left: 4rem;
+  top: 27rem;
+  font-size: 4rem;
+ }
 
+ .foto-3 #title2{
+  position: absolute;
+  font-family: var(--main-jersey-kategori-font);
+  width: 30rem;
+  right: 30rem;
+  top: 29rem;
+  font-size: 5rem;
+ }
+.grid-skills{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 86rem;
+  gap: 9rem;
+  width: 60rem;
+  cursor: pointer;
+}
+.skills-card img{
+  position: relative;
+  width: 100%;
+  top: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);;
+}
 
 @media (max-width: 768px) {
   .header {
@@ -363,7 +419,6 @@ z-index: 96;
     align-items: center;
     padding: 1rem;
   }
-
   .navbar {
     flex-direction: column;
     gap: 1rem;
